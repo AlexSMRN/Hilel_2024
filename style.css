@@ -4,6 +4,57 @@
     box-sizing: border-box;
 }
 
-img{
-    max-width: 100%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #a7baa6;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+header p {
+    color: #555;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.col {
+    flex: 25%;
+    padding: 0 5px;
+}
+
+.col img {
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+/* Адаптива для формату мешне 800px - 2 колонки */
+@media(max-width: 800px) {
+    .col {
+        flex: 50%;
+    }
+}
+
+/* Адаптива для формату мешне 600px - 2 колонки */
+@media(max-width: 600px) {
+    .col {
+        flex: 100%;
+    }
 }
