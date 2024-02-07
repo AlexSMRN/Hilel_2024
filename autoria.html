@@ -17,7 +17,7 @@
             </legend>
             <div>
                 <p>Об'єм Двигуна</p>
-                <input class="w02" type="number" min="1" name="Engine capacity" step="0.5" />
+                <input class="w02" type="number" min="1" name="Engine capacity"  step="0.2" />
             </div>
             <div>
                 <p>Кількість кінських сил</p>
@@ -29,9 +29,9 @@
             </div>
             <div>
                 <p>Cтан</p>
-                <label><input type="checkbox" name="State:" class="" value="used" />З пробігом</label><br /><label><input
-                        type="checkbox" name="State:" class="" value="crashed" />Після ДТП</label><br /><label><input
-                        type="checkbox" name="State:" class="" value="new" />Нове</label><br /><label><input
+                <label><input type="checkbox" name="State:" class="" value="Used" />З пробігом</label><br /><label><input
+                        type="checkbox" name="State:" class="" value="Crashed" />Після ДТП</label><br /><label><input
+                        type="checkbox" name="State:" class="" value="New" />Нове</label><br /><label><input
                         type="checkbox" name="State:" class="" value="Brought from the USA" />Пригнаний з США</label>
             </div>
             <br />
@@ -41,11 +41,11 @@
                     <option value="Diesel">Дизель</option>
                     <option value="Gas">Газ</option>
             </select>
-            <select name="sel" id="">
+            <select name="Paint coating" id="">
                 <option value="none" disabled>Лакофарбвое покриття</option>
-                <option value="1">Як Нове</option>
-                <option value="2">Професійно виправлені сліди використання</option>
-                <option value="3">Невиправлені слдіи використання</option>
+                <option value="As New">Як Нове</option>
+                <option value="Professionally repaired signs of use">Професійно виправлені сліди використання</option>
+                <option value="Uncorrected use cases">Невиправлені слдіи використання</option>
             </select>
         </fieldset>
         <div class="cent margin">
