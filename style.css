@@ -1,6 +1,3 @@
-.my-form {
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid #ccc;
-    transition: background-color 0.3s;
+*{
+    box-sizing: border-box;
 }
