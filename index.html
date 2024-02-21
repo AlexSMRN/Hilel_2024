@@ -4,27 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework</title>
+    <title>Video Reviews</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="inner-text pos-relative">
+    <div class="container d-flex">
+        <div class="inner-text d-block pos-relative">
             <h1>“I love that it has <br> omegas in it but they <br> are plant-based.”</h1>
             <p>Erica Chidi Cohen</p>
             <p>Health Educator</p>
         </div>
-        <div class="inner-image">
-            <button id="play-button" class="play-button"><img src="image/HW5(6).png" alt="Play"></button>
-            <img src="image/HW5(5).png" alt="Man" id="Man">
+        <div class="inner-image d-flex pos-relative">
+            <button id="play-button" class="play-button pos-absolute"><img src="image/HW5(6).png"
+                    alt="Play"></button>
+            <img src="image/HW5(5).png" alt="Third Man" id="man3">
         </div>
-        <div class="inner-images">
-            <img src="image/HW5(4).png" alt="Man" id="Man">
-            <button class="left-arrow pos-absolute top-40"><img src="image/HW5(1).png" alt="left button"></button>
-            <img src="image/HW5(3).png" alt="Man" id="Man">
-            <button class="right-arrow pos-absolute top-40"><img src="image/HW5(2).png" alt="right button"></button>
+        <div class="inner-images d-flex pos-relative">
+            <img src="image/HW5(4).png" alt="Second Man" id="man2">
+            <img src="image/HW5(3).png" alt="First Man" id="man1">
+            <div class="pos-absolute arrows d-flex">
+                <button class="left-arrow"><img src="image/HW5(1).png" alt="Left Button"></button>
+                <button class="right-arrow"><img src="image/HW5(2).png" alt="Right Button"></button>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
