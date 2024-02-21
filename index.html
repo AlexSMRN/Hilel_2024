@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Reviews</title>
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container d-flex">
-        <div class="text relative d-flex">
-            <h1>“I love that it has <br> omegas in it but they <br> are plant-based.”</h1>
-            <p>Erica Chidi Cohen</p>
-            <p>Health Educator</p>
+      <div class="text d-block relative">
+        <h1>“I love that it has <br> omegas in it but they <br> are plant-based.”</h1>
+        <p>Erica Chidi Cohen</p>
+        <p>Health Educator</p>
+      </div>
+      <div class="image d-flex relative">
+        <button id="play-button" class="play-button absolute"><img src="images/play-button.png" alt="Play"></button>
+        <img src="images/man3.png" alt="Third man" id="man3">
+      </div>
+      <div class="images d-flex relative">
+        <img src="images/man2.png" alt="Second man" id="man2">
+        <img src="images/man1.png" alt="First man" id="man1">
+        <div class="absolute arrows d-flex">
+          <button class="left-arrow"><img src="images/arrow-left.png" alt="left arrow"></button>
+          <button class="right-arrow"><img src="images/arrow-right.png" alt="right arrow"></button>
         </div>
-        <div class="d-flex image relative">
-            <button id="play-button" class="play-button pos-absolute"><img src="image/HW5(6).png"
-                    alt="Play"></button>
-            <img src="image/HW5(5).png" alt="Third Man" id="man3">
-        </div>
-        <div class="relative images">
-            <img src="image/HW5(4).png" alt="Second Man" id="man2">
-            <img src="image/HW5(3).png" alt="First Man" id="man1">
-            <div class="absolute arrows d-flex">
-                <button class="left-arrow"><img src="image/HW5(1).png" alt="Left Button"></button>
-                <button class="right-arrow"><img src="image/HW5(2).png" alt="Right Button"></button>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
