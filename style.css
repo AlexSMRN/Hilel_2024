@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --margins: 64px;
-}
-
 body {
     background-color: #F3F5F6;
 }
@@ -27,8 +23,8 @@ body {
 .container {
     max-width: 100%;
     justify-content: space-between;
-    margin-top: var(--margins);
-    margin-bottom: var(--margins);
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .d-block {
@@ -47,19 +43,19 @@ body {
     position: absolute;
 }
 
-.inner-text {
+.text {
     max-width: 390px;
     min-width: 390px;
     left: 12vw;
     z-index: 1;
 }
 
-.inner-text p:first-of-type {
+.text p:first-of-type {
     padding-top: 32px;
     font-size: 20px;
 }
 
-.inner-text p:nth-child(3) {
+.text p:nth-child(3) {
     color: #3C3C43;
     font-size: 14px;
     padding-top: 8px;
@@ -69,7 +65,7 @@ body {
     max-height: 465px;
 }
 
-.inner-images {
+.images {
     gap: 30px;
     max-height: 358px;
 }
@@ -96,10 +92,6 @@ button {
     display: block;
 }
 
-.top-40 {
-    top: 40%;
-}
-
 .play-button {
     left: 1rem;
     bottom: 1rem;
@@ -111,11 +103,11 @@ button {
 }
 
 @media screen and (max-width: 1380px) {
-    .inner-text {
+    .text {
         left: 15%;
     }
 
-    .inner-image {
+    .image {
         margin-right: 30px;
     }
 
@@ -135,7 +127,7 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-    .inner-image {
+    .image {
         margin-right: 40px;
     }
 
@@ -153,7 +145,7 @@ button {
 }
 
 @media screen and (max-width: 800px) {
-    .inner-text {
+    .text {
         left: 20%;
     }
 
@@ -163,7 +155,7 @@ button {
 }
 
 @media screen and (max-width: 700px) {
-    .inner-text {
+    .text {
         left: 25%;
     }
 
@@ -173,7 +165,7 @@ button {
 }
 
 @media screen and (max-width: 470px) {
-    .inner-text {
+    .text {
         left: 30%;
     }
 
@@ -183,7 +175,7 @@ button {
 }
 
 @media screen and (max-width: 600px) {
-    .inner-text {
+    .text {
         left: 30%;
         transform: translateX(-20%);
         position: absolute;
@@ -204,11 +196,11 @@ button {
         top: 0;
     }
 
-    .inner-image {
+    .image {
         margin: 0;
     }
 
-    .inner-images {
+    .images {
         flex-direction: row;
         justify-content: center;
         order: 1;
@@ -220,7 +212,7 @@ button {
         gap: 10px;
     }
 
-    .inner-images img {
+    .images img {
         max-height: 208px;
         max-width: 166px;
     }
