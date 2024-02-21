@@ -29,7 +29,6 @@ body {
     justify-content: space-between;
     margin-top: var(--margins);
     margin-bottom: var(--margins);
-    /* overflow: hidden; */
 }
 
 .d-block {
@@ -40,11 +39,11 @@ body {
     display: flex;
 }
 
-.pos-relative {
+.relative {
     position: relative;
 }
 
-.pos-absolute {
+.absolute {
     position: absolute;
 }
 
