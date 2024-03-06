@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Roboto;
+    src: url("/Roboto/Roboto-Regular.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../Roboto/Roboto-Light.ttf");
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.section1 {
+    background-color: #EEEFF1;
+    padding: 5rem;
+}
+
+.section1_container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.section1 .dropbtn {
+    display: none;
+}
+
+.section1 a {
+    color: black;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.section1 a:first-child,
+.section1 a:hover {
+    color: #34547A;
+}
+
+.section1 .main-info {
+    margin-top: 5rem;
+    max-width: 540px;
+}
+
+.section1 .main-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 78.75px;
+    padding-bottom: 60px;
+}
+
+.section1 .main-info button {
+    background-color: #34547A;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+}
+
+.section1 .main-info button:hover {
+    background-color: #273f5d;
+}
+
+@media screen and (max-width: 775px) {
+    .section-1 .d-flex {
+        flex-direction: column;
+    }
+
+    .section1 a {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .section1 .dropbtn {
+        display: block;
+        border: 2px solid black;
+        padding: 0.5rem;
+        border-radius: 20px;
+        color: #34547A;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26.25px;
+        background-color: transparent;
+    }
+
+    .section1 .dropdown-content {
+        position: static;
+        display: none;
+        z-index: 1;
+    }
+
+    .section1 .dropdown-content a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .section1 .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+.gray-text {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.25px;
+}
+
+.font-16 {
+    font-size: 16;
+    font-weight: 400;
+    line-height: 26.25px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.font-32 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 37.5px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section2_container {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.section2 .video {
+    margin-bottom: 100px;
+}
+
+.section2 iframe {
+    max-width: 1110px;
+    max-height: 600px;
+}
+
+@media screen and (max-width: 1440px) {
+    .section2 iframe {
+        max-width: 80vw;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .section2 iframe {
+        max-width: 70vw;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section2 iframe {
+        max-width: 70vw;
+        max-height: 50vh;
+    }
+}
+
+.section3 {
+    padding: 100px;
+    background-color: #34547A;
+}
+
+@media screen and (max-width: 570px) {
+    .section3 {
+        padding: 50px;
+    }
+}
+
+.section3_container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 940px) {
+    .section3_container {
+        max-width: 432px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section3_container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section3_container {
+        max-width: 360px;
+    }
+}
+
+.section3 .box {
+    display: flex;
+    text-align: left;
+}
+
+.section3 .box .inner-text {
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .section3 .box {
+        margin-bottom: 1rem;
+    }
+}
+
+.section3 h3,
+.section3 p {
+    color: white;
+}
+
+footer {
+    background-color: #34547A;
+    padding: 2rem 3rem;
+    color: white;
+}
+
+footer .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+    footer .container {
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer .container {
+        padding: 1rem 2rem;
+    }
+}
+
+footer p {
+    padding-top: 1rem;
+    font-size: 13;
+    font-weight: 400;
+    line-height: 21.33px;
+}

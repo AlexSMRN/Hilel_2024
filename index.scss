@@ -1,0 +1,246 @@
+@use "variables" as *;
+
+@font-face {
+    font-family: Roboto;
+    src: url("/Roboto/Roboto-Regular.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../Roboto/Roboto-Light.ttf");
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+@mixin fonts($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+.section-1 {
+    background-color: $bg-gray;
+    padding: 5rem;
+
+    &_container {
+        max-width: $container-width*2;
+        margin: 0 auto;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        margin-right: 2rem;
+
+        &:first-child,
+        &:hover {
+            color: $main-blue;
+        }
+    }
+
+    .main-info {
+        margin-top: 5rem;
+        max-width: $container-width;
+
+        h1 {
+            @include fonts(48px, 700, 78.75px);
+            padding-bottom: 60px;
+        }
+
+        button {
+            background-color: $main-blue;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+
+            &:hover {
+                background-color: $main-blue-dark;
+            }
+        }
+    }
+
+    @media screen and (max-width: 775px) {
+        .d-flex {
+            flex-direction: column;
+        }
+
+        a {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+
+        .dropbtn {
+            display: block;
+            border: 2px solid black;
+            padding: 0.5rem;
+            border-radius: 20px;
+            color: $main-blue;
+            @include fonts(16px, 500, 26.25px);
+            background-color: transparent;
+        }
+
+        .dropdown-content {
+            position: static;
+            display: none;
+            z-index: 1;
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    }
+
+}
+
+.gray-text {
+    color: $gray;
+    @include fonts(16px, 400, 26.25px);
+}
+
+.font-16 {
+    @include fonts(16, 400, 26.25px)
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.font-32 {
+    @include fonts(32px, 500, 37.5px)
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section2 {
+    text-align: center;
+    margin-top: $p-100;
+    margin-bottom: $p-100;
+
+    &_container {
+        max-width: $container-width;
+        margin: 0 auto;
+    }
+
+    .video {
+        margin-bottom: $p-100;
+    }
+
+    iframe {
+        max-width: 1110px;
+        max-height: 600px;
+
+        @media screen and (max-width:1440px) {
+            max-width: 80vw;
+            height: 80vh;
+        }
+
+        @media screen and (max-width:1025px) {
+            max-width: 70vw;
+            height: 60vh;
+        }
+
+        @media screen and (max-width:750px) {
+            max-width: 70vw;
+            max-height: 50vh;
+        }
+    }
+
+}
+
+.section3 {
+    padding: $p-100;
+    background-color: $main-blue;
+
+    @media screen and (max-width: 570px) {
+        padding: 50px;
+    }
+
+    &_container {
+        max-width: $container-width*2;
+        margin: 0 auto;
+
+        @media screen and (max-width:940px) {
+            max-width: $container-width*0.8;
+        }
+
+        @media screen and (max-width: 550px) {
+            max-width: $container-width;
+        }
+
+        @media screen and (max-width: 500px) {
+            max-width: $container-width/1.5;
+        }
+    }
+
+    .box {
+        display: flex;
+        text-align: left;
+
+        .inner-text {
+            padding-left: 1rem;
+        }
+
+        @media screen and (max-width:900px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    h3,
+    p {
+        color: white;
+    }
+
+}
+
+footer {
+    background-color: $main-blue;
+    padding: 2rem 3rem;
+    color: white;
+
+    .container {
+        max-width: $container-width*2;
+        margin: 0 auto;
+        text-align: left;
+
+        @media screen and (max-width:1024px) {
+            padding: 1rem 4rem;
+        }
+
+        @media screen and (max-width:700px) {
+            padding: 1rem 2rem;
+        }
+    }
+
+    p {
+        padding-top: 1rem;
+        @include fonts(13, 400, 21.33px)
+    }
+}
