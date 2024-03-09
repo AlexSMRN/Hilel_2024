@@ -27,7 +27,7 @@
     margin: 0 auto;
 }
 
-.section1 .dropbtn {
+.section1 .btn1 {
     display: none;
 }
 
@@ -42,26 +42,26 @@
     color: #34547A;
 }
 
-.section1 .main-info {
+.section1 .main {
     margin-top: 5rem;
     max-width: 540px;
 }
 
-.section1 .main-info h1 {
+.section1 .main h1 {
     font-size: 48px;
     font-weight: 700;
     line-height: 78.75px;
     padding-bottom: 60px;
 }
 
-.section1 .main-info button {
+.section1 .main button {
     background-color: #34547A;
     color: white;
     border: none;
     padding: 1rem 3rem;
 }
 
-.section1 .main-info button:hover {
+.section1 .main button:hover {
     background-color: #273f5d;
 }
 
@@ -75,7 +75,7 @@
         margin-bottom: 1rem;
     }
 
-    .section1 .dropbtn {
+    .section1 .btn1 {
         display: block;
         border: 2px solid black;
         padding: 0.5rem;
@@ -87,24 +87,24 @@
         background-color: transparent;
     }
 
-    .section1 .dropdown-content {
+    .section1 .dropdown {
         position: static;
         display: none;
         z-index: 1;
     }
 
-    .section1 .dropdown-content a {
+    .section1 .dropdown a {
         display: block;
         width: 100%;
         padding: 1rem;
     }
 
-    .section1 .dropdown:hover .dropdown-content {
+    .section1 .dropdown:hover .dropdown {
         display: block;
     }
 }
 
-.gray-text {
+.gray {
     color: #727272;
     font-size: 16px;
     font-weight: 400;
@@ -117,11 +117,11 @@
     line-height: 26.25px;
 }
 
-.pb-60 {
+.DL {
     padding-bottom: 60px;
 }
 
-.pb-50 {
+.AM {
     padding-bottom: 50px;
 }
 

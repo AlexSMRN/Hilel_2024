@@ -34,7 +34,7 @@
         margin: 0 auto;
     }
 
-    .dropbtn {
+    .btn1 {
         display: none;
     }
 
@@ -49,7 +49,7 @@
         }
     }
 
-    .main-info {
+    .main {
         margin-top: 5rem;
         max-width: $container-width;
 
@@ -80,7 +80,7 @@
             margin-bottom: 1rem;
         }
 
-        .dropbtn {
+        .btn1 {
             display: block;
             border: 2px solid black;
             padding: 0.5rem;
@@ -90,7 +90,7 @@
             background-color: transparent;
         }
 
-        .dropdown-content {
+        .dropdown {
             position: static;
             display: none;
             z-index: 1;
@@ -102,14 +102,14 @@
             }
         }
 
-        .dropdown:hover .dropdown-content {
+        .dropdown:hover .dropdown {
             display: block;
         }
     }
 
 }
 
-.gray-text {
+.gray {
     color: $gray;
     @include fonts(16px, 400, 26.25px);
 }
@@ -118,11 +118,11 @@
     @include fonts(16, 400, 26.25px)
 }
 
-.pb-60 {
+.DL {
     padding-bottom: 60px;
 }
 
-.pb-50 {
+.AM {
     padding-bottom: 50px;
 }
 
