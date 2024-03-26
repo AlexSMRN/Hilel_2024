@@ -1,13 +1,13 @@
-const submenus = document.querySelectorAll('.submenu');
+const averagemenus = document.querySelectorAll('.averagemenu');
 
-submenus.forEach((submenu) => {
-    const listItems = submenu.querySelectorAll('li');
+averagemenus.forEach((averagemenu) => {
+    const listItems = averagemenu.querySelectorAll('li');
 
     listItems[1].addEventListener('mouseover', () => {
-    submenu.classList.add('hide-submenu');
+    averagemenu.classList.add('hide-averagemenu');
     });
 
     listItems[0].addEventListener('mouseover', () => {
-    submenu.classList.remove('hide-submenu');
+    averagemenu.classList.remove('hide-averagemenu');
     });
 });

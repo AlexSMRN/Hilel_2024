@@ -14,7 +14,7 @@
     background-color: var(--main-blue);
 }
 
-.topmenu {
+.homemenu {
     background-color: black;
     display: flex;
 }
@@ -35,17 +35,17 @@ a {
     display: inline-block;
 }
 
-.plus::after {
+.second::after {
     content: '+';
     color: white;
     margin-left: 1rem;
 }
 
-.blue-link {
+.link-plus {
     background-color: var(--main-blue);
 }
 
-.blue-link:hover {
+.link-plus:hover {
     background-color: rgb(58, 58, 219);
 }
 
@@ -53,14 +53,14 @@ a {
     border: 1px solid black;
 }
 
-.submenu {
+.averagemenu {
     position: absolute;
     z-index: 5;
     display: none;
     min-width: max-content;
 }
 
-.inner-submenu {
+.inner-averagemenu {
     position: absolute;
     left: 100%;
     top: 0;
@@ -73,14 +73,14 @@ a {
     position: relative;
 }
 
-.topmenu li:hover>.submenu {
+.homemenu li:hover>.averagemenu {
     display: block;
 }
 
-.submenu li:hover>.inner-submenu {
+.averagemenu li:hover>.inner-averagemenu {
     display: block;
 }
 
-.submenu.hide-submenu {
+.averagemenu.hide-averagemenu {
     display: none;
 }
